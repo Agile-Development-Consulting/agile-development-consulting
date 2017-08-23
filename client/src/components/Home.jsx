@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import CompanyPitch from './CompanyPitch';
+import ClientPortfolio from './ClientPortfolio';
+import ConsultationForm from './ConsultationForm';
 import logo from '../images/Agile-Logo.png';
 
 class Home extends Component {
@@ -14,6 +16,12 @@ class Home extends Component {
             </div>
             <div className="company-pitch">
                 <CompanyPitch />
+            </div>
+            <div className="client-portfolio">
+                <ClientPortfolio />
+            </div>
+            <div className="consultation-form">
+                <ConsultationForm />
             </div>
             </div>
         );

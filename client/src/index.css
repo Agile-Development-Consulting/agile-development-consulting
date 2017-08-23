@@ -50,7 +50,59 @@ body {
   justify-content: center;
   align-items: center;
   position:relative;
+  padding-top:3em;
   padding-bottom:3em;
-  height:75vh
+  height:100%
 }
-
+h1{
+  font-size:3em;
+  line-height:.5em;
+}
+button {
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius:4px;
+  font-size:2rem;
+  background-color: #141431;
+  color: white;
+  border: none;
+  margin-top:.5em;
+}
+.secondary-button {
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius:4px;
+  font-size:2rem;
+  background-color: white;
+  color: #141431;
+  border: none;
+  margin-top:.5em;
+}
+.client-portfolio{
+  background-color:#141431;
+  font-size: 1rem;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  padding-top:3em;
+  padding-bottom:3em;
+  height:100%
+}
+.consultation-form{
+  background-color:#fff;
+  font-size: 1rem;
+  color: #141431;
+  font-family: 'Open Sans', sans-serif;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  padding-top:3em;
+  padding-bottom:3em;
+  height:100%
+}
