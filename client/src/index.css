@@ -27,7 +27,7 @@ body {
   align-items: center;
   position:relative;
   padding-bottom:3em;
-  height:100vh;
+  height:75vh
 }
 .logo-row{
   text-align:left;
@@ -41,5 +41,16 @@ body {
 }
 .logo{
   width:100%;
+}
+.company-pitch{
+  background-color:#fff;
+  font-size: 1rem;
+  color: #141431;
+  font-family: 'Open Sans', sans-serif;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  padding-bottom:3em;
+  height:75vh
 }
 

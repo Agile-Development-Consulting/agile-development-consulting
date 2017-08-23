@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CompanyPitch from './CompanyPitch';
 import logo from '../images/Agile-Logo.png';
 
 class Home extends Component {
@@ -10,6 +11,9 @@ class Home extends Component {
                     <img className="logo" src={logo} alt="Agile Development Consulting"/>
                     <p>We handle things, so you don't have to.</p>
                 </div>
+            </div>
+            <div className="company-pitch">
+                <CompanyPitch />
             </div>
             </div>
         );
