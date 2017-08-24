@@ -106,3 +106,27 @@ button {
   padding-bottom:3em;
   height:100%
 }
+input{
+  width:40%;
+  height:1em;
+  border: 0;
+  margin-bottom:2em;
+  font-size:1em;
+  font-weight:700;
+  padding:1em;
+  border:2px solid black;
+}
+textarea{
+  width:40%;
+  height:1em;
+  border: 0;
+  margin-bottom:2em;
+  font-size:1em;
+  font-weight:700;
+  padding:1em;
+  border:2px solid black;
+}
+.label{
+  font-size:1em;
+  font-weight:700;
+}
