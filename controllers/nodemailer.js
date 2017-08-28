@@ -9,6 +9,7 @@ const nodemailer = require('nodemailer');
 
 router.post('/', (req, res) => {
     console.log("Hit the nodemailer route");
+    console.log(req.body)
     var transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
@@ -17,13 +18,17 @@ router.post('/', (req, res) => {
         }
     });
     // var text = `Hello world from \n\n + ${req.body.name}`;
+    var name = `${req.body.consultationInfo.fullName}`
+    var email = `${req.body.consultationInfo.email}`
+    var phone = `${req.body.consultationInfo.phone}`
+    var businessGoal = `${req.body.consultationInfo.businessGoal}`
     var text = "Hello world from me!";
     var mailOptions = {
         from: process.env.GMAIL_EMAIL, // sender address
         to: process.env.GMAIL_EMAIL, // list of receivers
-        subject: 'Email Example', // Subject line
-        text: text //, // plaintext body
-        // html: '<b>Hello world ✔</b>' // You can choose to send an HTML body instead
+        subject: `Message from ${name}`, // Subject line
+        // text: text, //, // plaintext body
+        html: `<b>Name:</b>${name}<br /><b>Email:</b> ${email}<br /><b>Phone: </b>${phone}<br /><b>Business Goals: </b>${businessGoal}` // You can choose to send an HTML body instead
       };
       transporter.sendMail(mailOptions, function(error, info){
         if(error){
