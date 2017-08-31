@@ -20,7 +20,7 @@ class Home extends Component {
             <div className="client-portfolio">
                 <ClientPortfolio />
             </div>
-            <div className="consultation-form">
+            <div className="consultation-form" id="consultation">
                 <ConsultationForm />
             </div>
             </div>
