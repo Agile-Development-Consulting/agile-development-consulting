@@ -21,7 +21,7 @@ class ConsultationForm extends Component {
         this.setState({ consultationInfo })
     }
     _handleSubmit = (e) => {
-        e.preventDefault();
+        // e.preventDefault();
         const payload = this.state;
         axios.post(`/sayHello`, payload)
         .then((res) => {
