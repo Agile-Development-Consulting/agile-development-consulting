@@ -24,8 +24,8 @@ router.post('/', (req, res) => {
     var businessGoal = `${req.body.consultationInfo.businessGoal}`
     var text = "Hello world from me!";
     var mailOptions = {
-        from: process.env.GMAIL_EMAIL, // sender address
-        to: process.env.GMAIL_EMAIL, // list of receivers
+        from:  process.env.GMAIL_EMAIL,// sender address
+        to: '' + process.env.GMAIL_EMAIL + ', jonathanwatson1@gmail.com',  // list of receivers
         subject: `Message from ${name}`, // Subject line
         // text: text, //, // plaintext body
         html: `<b>Name:</b>${name}<br /><b>Email:</b> ${email}<br /><b>Phone: </b>${phone}<br /><b>Business Goals: </b>${businessGoal}` // You can choose to send an HTML body instead
